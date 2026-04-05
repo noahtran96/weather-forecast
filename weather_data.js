@@ -34,21 +34,21 @@ const getAverage = (arr) => {
 console.log(`Average high temperature: ${getAverage(highTemperatures)}`);
 
 // 4. What is the average low temperature from the data set?
-console.log(`Average low temperature: ${getAverage(lowTemperatures)}`); // utilize the function defined in question 3
+console.log(`Average low temperature: ${getAverage(lowTemperatures)}`); // Utilize the function defined in question 3
 
 // 5. What is the median high temperature from the data set?
 const getMedian = (arr) => {
-  // sort the array in ascending order
+  // Sort the array in ascending order
   let sortedArr = [...arr].sort((a, b) => a - b);
   let len = sortedArr.length;
-  // find the middle index without Math.floor
+  // Find the middle index without Math.floor
   let mid = (len / 2) | 0;
 
   if (len % 2 !== 0) {
-    // if the length is odd, return the middle element
+    // If the length is odd, return the middle element
     return sortedArr[mid];
   } else {
-    // if the length is even, return the average of the two middle elements
+    // If the length is even, return the average of the two middle elements
     return (sortedArr[mid - 1] + sortedArr[mid]) / 2;
   }
 };
@@ -56,4 +56,4 @@ const getMedian = (arr) => {
 console.log(`Median high temperature: ${getMedian(highTemperatures)}`);
 
 // 6. What is the median low temperature from the data set?
-console.log(`Median low temperature: ${getMedian(lowTemperatures)}`); // utilize the function defined in question 5
+console.log(`Median low temperature: ${getMedian(lowTemperatures)}`); // Utilize the function defined in question 5
