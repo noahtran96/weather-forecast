@@ -22,7 +22,7 @@ for (let i = 1; i < lowTemperatures.length; i++) {
 }
 console.log(`Lowest temperature: ${lowest}`);
 
-// 3. What is the average high temperature from the data set? + 4.
+// 3. What is the average high temperature from the data set?
 const getAverage = (arr) => {
   let total = 0;
   for (let i = 0; i < highTemperatures.length; i++) {
